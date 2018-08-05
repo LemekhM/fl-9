@@ -7,7 +7,7 @@
     }
 
     .thumbnail {
-        border-radius: 50% 50%;
+        border-radius: 50%;
     }
 
     p:first-letter {
@@ -20,8 +20,7 @@
     }
 
 
-    section,
-    .tm-banner {
+    section, .tm-banner {
         position: relative;
     }
 
