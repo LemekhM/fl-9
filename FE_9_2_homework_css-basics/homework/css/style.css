@@ -1,0 +1,153 @@
+
+@media screen {
+
+
+    .box-bg :hover {
+        background:#35b5de;
+    }
+
+    .thumbnail {
+        border-radius: 50% 50%;
+    }
+
+    p:first-letter {
+        color: #76cdd7;
+        font-size: 30px;
+    }
+
+    .tm-sidebar, .tm-banner, .tm-content-box {
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+
+    section,
+    .tm-banner {
+        position: relative;
+    }
+
+    .tm-main-content>section:not(:last-of-type):not(.blocks)::before,.tm-banner::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 120px 0 0px;
+        border-color: #31b2dd transparent transparent transparent;
+    }
+
+    #tmCarousel .tm-section-title {
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
+
+    h2+p {
+    font-style: italic;
+    }
+
+    .tm-section-description {
+    text-indent: 28px;
+    line-height: 33px;
+    }
+
+    .heading h2 {
+        color: #76cdd7;
+        text-align: center;
+    }
+
+    .pad a {
+        color: #000;
+    }
+    .pad li :hover {
+    color: #76cdd7;
+    text-decoration: underline;
+    border-bottom: 1px solid #76cdd7;
+    }
+    .pad a:visited {
+    color: silver;
+    }
+
+    .text::after{
+        content: "NEW";
+        color: red;
+        vertical-align: 8px;
+        font-size: 9px;
+    }
+
+    .box p::first-letter {
+        color: #000;
+    }
+    .blocks .boxes li:nth-child(odd) {
+        background: #f2f2f2;
+    }
+
+    .blocks .boxes {
+        padding-top: 5px;
+        background: #f2f2f2;
+    }
+
+    .tm-main-nav li:not(:last-child) {
+        border-bottom: 2px dotted silver;
+    }
+    #contact input, #contact_message, .btn {
+        color: red;
+    }
+
+    #contact .mandatory-field::after{
+        content: "*";
+        color: red;
+        font-weight: bold;
+    }
+
+    .btn:hover {
+        background-color: #76cdd7;
+        border-color: #f2f2f2
+    }
+}
+    
+
+@media print {
+
+    body {
+        background-color: #fff;
+    }
+    .container {
+         max-width: 700px;
+    }
+    .tm-banner {
+         height: 250px;
+         padding: 30px;
+    }
+
+
+    .tm-sidebar, #about,section:not(:first-of-type):not(.tm-main-content) {
+        display: none;
+    }
+
+
+    .tm-main-content {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .flex-2-col {
+        flex-direction: column;
+    }
+
+    .tm-team-description-container {
+        max-width: 100%;
+    }
+
+    .pad {
+        padding: 0px 50px;
+    }
+    .tm-content-box {
+        margin-bottom: 0;
+    }
+    h2.tm-section-title {
+        color: blue;
+    }
+    p {
+        margin-top: 15px;
+    }
+}
