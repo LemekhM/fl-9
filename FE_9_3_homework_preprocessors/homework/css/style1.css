@@ -1,0 +1,126 @@
+body {
+  max-width: 950px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  color: #617d8a;
+  background: #fff; }
+
+img {
+  max-width: 100%; }
+
+header {
+  overflow: hidden; }
+  header .logo img {
+    float: left;
+    max-width: 39%; }
+
+nav {
+  margin-top: 149px;
+  float: right;
+  border-bottom: 1px solid #999999;
+  border-top: 1px solid #999999; }
+  nav a {
+    float: left;
+    color: #1fbcd3;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 20px 69px;
+    text-decoration: none; }
+
+.toolbar {
+  margin-top: 20px;
+  float: right; }
+  .toolbar input {
+    background: #fff;
+    color: #1fbcd3;
+    border: 1px solid #1fbcd3;
+    padding: 10px 50px 10px 20px; }
+
+.post-list {
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto; }
+  .post-list article {
+    max-width: 46%;
+    margin-top: 21px;
+    padding: 12px;
+    background: #efefef; }
+    .post-list article div {
+      margin: 9px 13px; }
+    .post-list article .post-description {
+      color: #159587;
+      font-size: 12px;
+      margin: 0px;
+      padding: 0px 5px 9px 6px;
+      border-bottom: 1px solid #999999; }
+    .post-list article h3 {
+      text-transform: uppercase;
+      font-size: 17px;
+      margin: 8px 0px 0px 0px;
+      color: #1697a6; }
+    .post-list article p {
+      margin: 0px 1px;
+      line-height: 24px;
+      font-size: 15px;
+      font-weight: lighter; }
+      .post-list article p + p {
+        margin-top: 20px; }
+
+.about {
+  margin: 113px 0px 63px 16px;
+  font-size: 13px; }
+  .about h1 {
+    color: #1fbcd3;
+    text-align: right;
+    text-transform: uppercase;
+    margin: 0px; }
+  .about p {
+    color: #6a8ba7;
+    margin: 5px 22px 21px 18px;
+    font-size: 17px; }
+
+.contactbar .contact {
+  background: #fff;
+  width: 99%;
+  margin: 8px 0px;
+  padding: 15px 0px 15px 16px; }
+.contactbar .message {
+  background: #fff;
+  width: 99%;
+  margin: 12px 0px;
+  padding: 15px 0px 60px 16px; }
+.contactbar textarea, .contactbar input {
+  font-family: sans-serif;
+  font-size: 13px;
+  border-color: #a7a7a7; }
+
+.contact-form {
+  color: #1fbcd3;
+  text-align: right; }
+  .contact-form h1 {
+    margin: 0px;
+    font-size: 20px; }
+  .contact-form h4 {
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 0px 0px 20px 0px; }
+
+.btn {
+  float: right;
+  border: 1px solid #1fbcd3;
+  background: #1fbcd3;
+  color: white;
+  padding: 10px 77px;
+  margin-top: 5px; }
+  .btn:hover {
+    background: #1697a6; }
+
+footer {
+  clear: both;
+  color: #6a8ba7;
+  font-size: 13px;
+  margin: 50px 0px; }
