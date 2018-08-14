@@ -1,0 +1,253 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+/* :root {
+  --bg-color--dark: #0a1223;
+  --bg-color--light: #fff;
+  --link: #5d5d5d;
+  --link--active: #54597d;
+  --link--hover: #54597d;
+  --article-title: #ddd;
+  --article-title--dark: #000;
+  --thumbnail--description: #5d5d5d; */
+
+  /* These styles are needed only for media query max-width: 575px */
+
+  /* The 'Up' button (circle button at right bottom corner) */
+  /* --btn-color: #fff;
+  --btn-bg-color: #5ebcff;
+
+  --navigation-border-bottom: #ddd;
+  --thumbnail-title: #484747;
+} */
+
+/* Your styles go here */
+
+
+/* _________reset________ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* ________________________ */
+
+
+
+body {
+  background-color: #0a1223;
+  width: 100%;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+header {
+  margin: 0 auto;
+  width: 100%;
+}
+
+nav {
+  text-align: right;
+  margin: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 20px;
+  font-weight: 100;
+  color: #5d5d5d;
+}
+
+nav a:hover {
+  color: #54597d;
+ } 
+
+nav a:focus {
+  outline: none;
+  color: #54597d;
+}
+
+.title_header {
+  margin: 150px 50px 100px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5vw;
+  color: #ddd;
+}
+
+
+.facts h2 {
+  margin: 30px 0px;
+  font-size: 30px;
+  color: #ddd;
+  position: relative;
+}
+.facts h2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right,
+   rgba(221,221,221,0),
+   rgba(10,18,35,.7));
+}
+
+p {
+  font-size: 15px;
+  text-indent: 1.5em;
+  color: #5d5d5d;
+  text-align: justify;
+}
+img {
+  width: 100%;
+}
+
+.moon_facts {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.moon_facts:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.facts, .img {
+  width: 450px;
+  margin: 20px;
+}
+
+.buttom_up {
+  display: none;
+}
+
+@media (max-width: 991px) {
+
+  .moon_facts, .moon_facts:nth-child(2n) {
+    flex-direction: column;
+  }
+
+
+ .title_header {
+    margin: 150px 60px 100px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 6vw;
+  }
+
+  nav {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+
+  body {
+    background-color: #fff;
+  }
+
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  nav a {
+    margin: 0px;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #000;
+    font-size: 14px;
+  }
+
+  nav a:active {
+    font-weight: bold;
+  }
+
+
+  .facts, .img {
+  width: 80%;
+  margin: 25px;
+  }
+
+  .title_header {
+    margin: 100px 20px;
+  }
+
+  h1 {
+    font-size: 7vw;
+    color: #000;
+  }
+
+  .facts h2 {
+    color: #484747;
+    background: none;
+  }
+
+  .facts h2:after {
+    background: none;
+  }
+
+  p {
+    color: #484747;
+    text-align: justify;
+  }
+
+  .buttom_up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #5ebcff;
+    font-size: 18px;
+    box-shadow: 9px 12px 12px 0px #ddd;
+  }
+
+  nav a:focus {
+    outline: none;
+    color: #54597d;
+    font-weight: 600;
+  }
+
+  .buttom_up a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .buttom_up a:focus {
+    outline: none;
+    color: #54597d;
+  }
+
+}
